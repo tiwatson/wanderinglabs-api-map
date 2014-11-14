@@ -67,6 +67,7 @@ GEM
     ffi (1.9.6)
     figaro (1.0.0)
       thor (~> 0.14)
+    geocoder (1.2.6)
     haml (4.1.0.beta.1)
       tilt
     haml-rails (0.5.3)
@@ -115,6 +116,8 @@ GEM
       pry
     quiet_assets (1.0.3)
       railties (>= 3.1, < 5.0)
+    rabl (0.11.4)
+      activesupport (>= 2.3.14)
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
@@ -218,20 +221,24 @@ DEPENDENCIES
   factory_girl_rails
   faker
   figaro (>= 1.0.0.rc1)
+  geocoder
   haml-rails
   html2haml
   hub
   jbuilder (~> 2.0)
   jquery-rails
   launchy
+  nokogiri
   pg
   pry-rails
   pry-rescue
   quiet_assets
+  rabl
   rails (= 4.1.7)
   rails_12factor
   rails_layout
   rspec-rails
+  rubyzip
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
   selenium-webdriver
