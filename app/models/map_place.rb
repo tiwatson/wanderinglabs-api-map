@@ -50,6 +50,12 @@ CATEGORY_NAMES = {
     CATEGORY_NAMES[self.category.to_sym]
   end
 
+  def link_summary
+    self.map_place_links.collect do |mpl|
+      "<a href='#{mpl.url}' target='_BLANK'>#{mpl.title}</a>"
+    end.join(' - ')
+  end
+
   def ww_year
     if self.arrived < Date.parse('14-06-2013')
       0

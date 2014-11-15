@@ -1,6 +1,7 @@
-attributes :description, :city, :state
+attributes :city, :state
 
 node(:name) { |mp| mp.title }
+node(:description) { |mp| mp.link_summary }
 node(:price) { |mp| "$#{mp.price}" }
 node(:year) { |mp| mp.ww_year }
 node(:park_type) { |mp| mp.category_name }

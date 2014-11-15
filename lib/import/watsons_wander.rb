@@ -7,6 +7,21 @@ class WatsonsWander
   # curl https://wanderinglabs-api-map.herokuapp.com/api/v1/maps/1.json > track_points.json
   # curl https://wanderinglabs-api-map.herokuapp.com/api/v1/maps/1/d3_current.json > current.json
 
+
+  def parse_out_descriptions
+    MapPlace.find_each do |mp|
+      d = Nokogiri::HTML(mp.description)
+
+      d.css('a').each do |link|
+        if link['href'].present?
+          MapPlaceLink.create(map_place_id: mp.id, url: link['href'], title: link.text)
+        end
+      end
+    end
+
+  end
+
+
   # Day - Month - Year
   def self.import(arrived = '09-11-2014')
     require 'zip'
