@@ -21,6 +21,7 @@ CATEGORY_NAMES = {
 };
 
   belongs_to :map
+  has_many :map_place_links
 
   default_scope { order('arrived ASC') }
 
