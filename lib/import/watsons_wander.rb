@@ -4,6 +4,9 @@ class WatsonsWander
   # MapPlace.create(map_id: 1, title: 'Bayou Segnette State Park', arrived: Date.parse('09-11-2014'), latitude: 29.890033, longitude: -90.162668, price: 20, category: 'SP')
   # reload! && load('import/watsons_wander.rb')
 
+  # curl https://wanderinglabs-api-map.herokuapp.com/api/v1/maps/1.json > track_points.json
+  # curl https://wanderinglabs-api-map.herokuapp.com/api/v1/maps/1/d3_current.json > current.json
+
   # Day - Month - Year
   def self.import(arrived = '09-11-2014')
     require 'zip'
