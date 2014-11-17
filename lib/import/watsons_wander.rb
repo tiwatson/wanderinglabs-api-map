@@ -23,11 +23,11 @@ class WatsonsWander
 
 
   # Day - Month - Year
-  def self.import(arrived = '09-11-2014')
+  def self.import(arrived = '16-11-2014')
     require 'zip'
 
     xml = ''
-    Zip::File.open("#{Rails.root}/tmp/import/#{arrived}.kmz") do |zip_file|
+    Zip::File.open("#{Rails.root}/public/import/#{arrived}.kmz") do |zip_file|
       entry = zip_file.glob('*.kml').first
       xml = entry.get_input_stream.read
     end
