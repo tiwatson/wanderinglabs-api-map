@@ -1,7 +1,7 @@
 module Import
 class WatsonsWander
 
-  # MapPlace.create(map_id: 1, title: 'Bayou Segnette State Park', arrived: Date.parse('09-11-2014'), latitude: 29.890033, longitude: -90.162668, price: 20, category: 'SP')
+  # MapPlace.create(map_id: 1, title: 'Grayton Beach State Park', arrived: Date.parse('23-11-2014'), latitude: 30.329491, longitude: -86.153931, price: 20, category: 'SP')
   # reload! && load('import/watsons_wander.rb')
 
   # curl https://wanderinglabs-api-map.herokuapp.com/api/v1/maps/1.json > track_points.json
@@ -23,7 +23,7 @@ class WatsonsWander
 
 
   # Day - Month - Year
-  def self.import(arrived = '16-11-2014')
+  def self.import(arrived = '23-11-2014')
     require 'zip'
 
     xml = ''
