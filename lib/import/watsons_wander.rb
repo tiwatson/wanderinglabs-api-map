@@ -1,8 +1,9 @@
 module Import
 class WatsonsWander
 
-  # MapPlace.create(map_id: 1, title: 'Saint Andrews State Park', arrived: Date.parse('30-11-2014'), latitude: 30.1394922, longitude: -85.7409459, price: 28, category: 'SP')
-  # reload! && load('import/watsons_wander.rb')
+  # MapPlace.create(map_id: 1, title: 'St George Island State Park', arrived: Date.parse('13-12-2014'), latitude: 29.719506, longitude: -84.7523969, price: 24, category: 'SP')
+  # MapPlace.create(map_id: 1, title: 'Highlands Hammock State Park', arrived: Date.parse('14-12-2014'), latitude: 27.4745914, longitude: -81.5308225, price: 24, category: 'SP')
+  # reload! && load('import/watsons_wander.rb') && Import::WatsonsWander.import
 
   # curl https://wanderinglabs-api-map.herokuapp.com/api/v1/maps/1.json > track_points.json
   # curl https://wanderinglabs-api-map.herokuapp.com/api/v1/maps/1/d3_current.json > current.json
@@ -23,7 +24,7 @@ class WatsonsWander
 
 
   # Day - Month - Year
-  def self.import(arrived = '30-11-2014')
+  def self.import(arrived = '13-12-2014')
     require 'zip'
 
     xml = ''
