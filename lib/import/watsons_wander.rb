@@ -38,7 +38,8 @@ class WatsonsWander
     doc = Nokogiri::XML(xml)
     doc.remove_namespaces!
 
-    path = doc.xpath('//Document/Placemark')[0].xpath('LineString')[0].xpath('coordinates')[0].text.split(' ').collect { |p| p.split(',')[0..1] }
+    placemark = doc.xpath('//Document/Placemark').select { |p| p.xpath('LineString').present? }.first
+    path = placemark.xpath('LineString')[0].xpath('coordinates')[0].text.split(' ').collect { |p| p.split(',')[0..1] }
 
     map_item = MapPlace.where(arrived: Date.parse(arrived)).first
     map_item.arrival_path = path
