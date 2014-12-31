@@ -1,9 +1,11 @@
 module Import
 class WatsonsWander
 
-  # MapPlace.create(map_id: 1, title: 'St George Island State Park', arrived: Date.parse('13-12-2014'), latitude: 29.719506, longitude: -84.7523969, price: 24, category: 'SP')
-  # MapPlace.create(map_id: 1, title: 'Highlands Hammock State Park', arrived: Date.parse('14-12-2014'), latitude: 27.4745914, longitude: -81.5308225, price: 24, category: 'SP')
-  # reload! && load('import/watsons_wander.rb') && Import::WatsonsWander.import
+  # MapPlace.create(map_id: 1, title: 'Driveway - Lake Placid', arrived: Date.parse('24-12-2014'), latitude: 27.2974521, longitude: -81.3696395, price: 0, category: 'PR')
+  # MapPlace.create(map_id: 1, title: 'Miccosukee Resort', arrived: Date.parse('27-12-2014'), latitude: 25.763194, longitude: -80.4852033, price: 0, category: 'PL')
+  # MapPlace.create(map_id: 1, title: 'Driveway - Big Pine Key', arrived: Date.parse('28-12-2014'), latitude: 24.6699542, longitude: -81.3528706, price: 0, category: 'PR')
+
+  # reload! && load('import/watsons_wander.rb') && Import::WatsonsWander.import('24-12-2014') && Import::WatsonsWander.import('27-12-2014') && Import::WatsonsWander.import('28-12-2014')
 
   # curl https://wanderinglabs-api-map.herokuapp.com/api/v1/maps/1.json > track_points.json
   # curl https://wanderinglabs-api-map.herokuapp.com/api/v1/maps/1/d3_current.json > current.json
