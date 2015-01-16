@@ -16,6 +16,7 @@ gem 'geocoder'
 gem 'nokogiri'
 gem 'rabl'
 gem 'rubyzip'
+gem 'draper', '~> 1.3'
 
 group :development do
   gem 'better_errors'

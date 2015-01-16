@@ -1,25 +1,5 @@
 class MapPlace < ActiveRecord::Base
 
-CATEGORY_NAMES = {
-  PR: 'Private Residence',
-  NF: 'National Forest',
-  SP: 'State Park',
-  CP: 'County Park',
-  CITY: 'City Park',
-  PL: 'Parking Lot',
-  PP: 'Private RV Park',
-  NP: 'National Park',
-  CC: 'County Park',
-  ARMY: 'Army Corps of Engineers',
-  MFW: 'Montana Fish & Wildlife',
-  SF: 'State Forest Campground',
-  BLMB: 'BLM Boondocking',
-  BLM: 'BLM Campground',
-  SPB: 'State Park Boondocking',
-  NFB: 'National Forest Boondocking',
-  NPB: 'National Park Boondocking'
-};
-
   belongs_to :map
   has_many :map_place_links
 
@@ -43,7 +23,12 @@ CATEGORY_NAMES = {
   end
 
   before_save do |i|
+    i.calculate_stay_length
     i.price_total = i.price * i.stay_length
+  end
+
+  def state_short
+    self.state.present? ? STATE_ABBR.key(self.state) : ''
   end
 
   def category_name

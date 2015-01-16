@@ -6,6 +6,7 @@ Rails.application.routes.draw do
         member do
           get 'd3_current'
           get 'd3'
+          get 'infographic'
         end
       end
     end
