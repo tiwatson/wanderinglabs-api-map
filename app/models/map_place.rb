@@ -3,7 +3,7 @@ class MapPlace < ActiveRecord::Base
   belongs_to :map
   has_many :map_place_links
 
-  default_scope { order('arrived ASC') }
+  default_scope { order('arrived, id ASC') }
 
   reverse_geocoded_by :latitude, :longitude do |obj,results|
     logger.debug "REVERSE GEO: #{results.inspect}"

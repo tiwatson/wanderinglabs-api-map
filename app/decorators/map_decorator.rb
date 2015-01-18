@@ -41,4 +41,12 @@ class MapDecorator < Draper::Decorator
     object.map_places.where(state: current_state).sum(:stay_length)
   end
 
+  def path
+    DouglasPeucker::LineSimplifier.new(object.map_places.pluck(:arrival_path).flatten(1).collect { |i| [i[0].to_f, i[1].to_f]}).threshold(0.05).points
+  end
+
+  def path_points
+    # MapPlace.select { |mp| mp.arrival_path.include?([s[0].to_s, s[1].to_s]) }
+  end
+
 end
