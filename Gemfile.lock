@@ -74,6 +74,7 @@ GEM
     figaro (1.0.0)
       thor (~> 0.14)
     geocoder (1.2.6)
+    georuby (2.5.1)
     haml (4.1.0.beta.1)
       tilt
     haml-rails (0.5.3)
@@ -231,6 +232,7 @@ DEPENDENCIES
   faker
   figaro (>= 1.0.0.rc1)
   geocoder
+  georuby
   haml-rails
   html2haml
   hub

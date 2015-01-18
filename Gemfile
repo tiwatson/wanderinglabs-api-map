@@ -18,6 +18,7 @@ gem 'rabl'
 gem 'rubyzip'
 gem 'draper', '~> 1.3'
 gem 'douglas_peucker'
+gem 'georuby'
 
 group :development do
   gem 'better_errors'

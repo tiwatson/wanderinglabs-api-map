@@ -49,4 +49,16 @@ class MapDecorator < Draper::Decorator
     # MapPlace.select { |mp| mp.arrival_path.include?([s[0].to_s, s[1].to_s]) }
   end
 
+  def miles_towed
+    object.map_places.sum(:arrival_distance).round.to_i
+  end
+
+  def longest_arrival_distance
+    object.map_places.unscoped.order('arrival_distance DESC').first
+  end
+
+  def shortest_arrival_distance
+    object.map_places.unscoped.order('arrival_distance ASC').where('arrival_distance != 0').first
+  end
+
 end

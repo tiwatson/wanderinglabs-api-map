@@ -27,6 +27,10 @@ class MapPlace < ActiveRecord::Base
     i.price_total = i.price * i.stay_length
   end
 
+  before_save do |i|
+    i.calculate_arrival_distance
+  end
+
   def state_short
     self.state.present? ? STATE_ABBR.key(self.state) : ''
   end
@@ -69,4 +73,9 @@ class MapPlace < ActiveRecord::Base
     self.calculate_stay_length
     self.save
   end
+
+  def calculate_arrival_distance
+    self.arrival_distance = GeoRuby::SimpleFeatures::LineString.from_coordinates(self.arrival_path.collect { |i| [i[0].to_f, i[1].to_f]}).spherical_distance() / 1609.344
+  end
+
 end
