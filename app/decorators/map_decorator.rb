@@ -18,7 +18,7 @@ class MapDecorator < Draper::Decorator
   end
 
   def per_night_fee
-    object.map_places.all.collect { |i| i.price * i.stay_length }.sum.to_f / num_nights
+    object.map_places.all.collect { |i| i.price_adjusted * i.stay_length }.sum.to_f / num_nights
   end
 
   def most_exspensive

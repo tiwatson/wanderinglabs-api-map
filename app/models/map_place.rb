@@ -24,11 +24,22 @@ class MapPlace < ActiveRecord::Base
 
   before_save do |i|
     i.calculate_stay_length
-    i.price_total = i.price * i.stay_length
+    i.price_total = i.price_adjusted * i.stay_length
   end
 
   before_save do |i|
     i.calculate_arrival_distance
+  end
+
+  def price_adjusted
+    return self.price unless self.state == 'New Mexico' && self.category == 'SP'
+
+    nm_per_day = 4 # (225.to_f / self.map.map_places.where(state: 'New Mexico').where(category: 'SP').sum(:stay_length)).round
+
+    nm_price = self.price - 10
+    nm_price = 0 if nm_price < 0
+    nm_price = nm_price + nm_per_day
+    nm_price
   end
 
   def state_short
