@@ -21,7 +21,7 @@ child @map.longest_arrival_distance => :longest_arrival_distance do
   extends 'api/v1/map_places/infographic'
 end
 
-child @map.shortest_arrival_distance => :shortest_arrival_distance do 
+child @map.shortest_arrival_distance => :shortest_arrival_distance do
   extends 'api/v1/map_places/infographic'
 end
 
@@ -29,5 +29,5 @@ node(:num_states) { @states.size }
 
 node(:categories) { @categories }
 node(:states) { @states }
-
+node(:monthlies) { @monthlies }
 attributes :path

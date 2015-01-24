@@ -12,6 +12,7 @@ class Api::V1::MapsController < ApplicationController
   def infographic
     @states = Calculations::States.new(@map).data
     @categories = Calculations::Categories.new(@map).data
+    @monthlies = Calculations::Monthlies.new(@map).data
 
     @map = MapDecorator.decorate(@map)
     render 'api/v1/maps/infographic'
