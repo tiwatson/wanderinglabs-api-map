@@ -28,7 +28,7 @@ class MapPlace < ActiveRecord::Base
   end
 
   before_save do |i|
-    i.calculate_arrival_distance
+    i.calculate_arrival_distance if i.arrival_path.present?
   end
 
   def price_adjusted
