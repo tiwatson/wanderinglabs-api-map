@@ -25,6 +25,20 @@ class MapDecorator < Draper::Decorator
     object.map_places.reorder('price DESC').first
   end
 
+  def consecutive_free
+    free_days_max = 0
+    free_days_current = 0
+    object.map_places.find_each do |mp|
+      if mp.price == 0
+        free_days_current = free_days_current + mp.stay_length
+        free_days_max = free_days_current if free_days_current > free_days_max
+      else
+        free_days_current = 0
+      end
+    end
+    free_days_max
+  end
+
   def walmart_count
     object.map_places.where("title like '%Walmart%'").count
   end
@@ -51,6 +65,10 @@ class MapDecorator < Draper::Decorator
 
   def miles_towed
     object.map_places.sum(:arrival_distance).round.to_i
+  end
+
+  def average_towed
+    miles_towed.to_f / object.map_places.count.to_f
   end
 
   def longest_arrival_distance

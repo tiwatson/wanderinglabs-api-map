@@ -1,9 +1,13 @@
 object @map => nil
 
 attributes :num_places, :num_nights, :num_free_nights, :percentage_free_nights, :per_night_fee, :walmart_count,
-  :miles_towed
+  :miles_towed, :average_towed
 
-attributes :current_state_stay, :current_state_face
+attributes :current_state_stay, :current_state_face, :consecutive_free
+
+child @map.map_places do
+  extends 'api/v1/map_places/infographic'
+end
 
 child @map.most_exspensive => :most_exspensive do
   extends 'api/v1/map_places/infographic'
