@@ -3,7 +3,7 @@ class WatsonsWander
 
   # MapPlace.create(map_id: 1, title: 'John Prince Park', arrived: Date.parse('22-02-2015'), latitude: 26.5977159, longitude: -80.079769, price: 31, category: 'CP')
 
-  # reload! && load('import/watsons_wander.rb') && Import::WatsonsWander.import('25-01-2015')
+  # reload! && load('import/watsons_wander.rb') && Import::WatsonsWander.import('22-02-2015')
 
   # curl https://wanderinglabs-api-map.herokuapp.com/api/v1/maps/1.json > track_points.json
   # curl https://wanderinglabs-api-map.herokuapp.com/api/v1/maps/1/d3_current.json > current.json

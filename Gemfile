@@ -19,6 +19,7 @@ gem 'rubyzip'
 gem 'draper', '~> 1.3'
 gem 'douglas_peucker'
 gem 'georuby'
+gem 'aws-sdk-core'
 
 group :development do
   gem 'better_errors'
