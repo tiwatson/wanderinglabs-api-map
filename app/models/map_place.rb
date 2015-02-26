@@ -47,7 +47,7 @@ class MapPlace < ActiveRecord::Base
   end
 
   def state_short
-    self.state.present? && STATE_ABBR.has_key?(self.state) ? STATE_ABBR.key(self.state) : self.state
+    self.state.present? && STATE_ABBR.has_value?(self.state) ? STATE_ABBR.key(self.state) : self.state
   end
 
   def category_name
