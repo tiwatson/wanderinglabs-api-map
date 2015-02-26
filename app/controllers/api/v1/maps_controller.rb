@@ -15,6 +15,10 @@ class Api::V1::MapsController < ApplicationController
     @monthlies = Calculations::Monthlies.new(@map).data
 
     @map = MapDecorator.decorate(@map)
+
+    # Hack to keep last stay length up to date.
+    @map.map_places.last.save
+
     render 'api/v1/maps/infographic'
   end
 
