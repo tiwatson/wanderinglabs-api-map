@@ -47,7 +47,7 @@ class MapPlace < ActiveRecord::Base
   end
 
   def state_short
-    self.state.present? ? STATE_ABBR.key(self.state) : ''
+    self.state.present? && STATE_ABBR.has_key?(self.state) ? STATE_ABBR.key(self.state) : self.state
   end
 
   def category_name
@@ -72,10 +72,6 @@ class MapPlace < ActiveRecord::Base
 
   def arrival_path_small
     self.arrival_path
-  end
-
-  def state_short
-    self.state.present? ? STATE_ABBR.key(self.state) : ''
   end
 
   def calculate_stay_length
