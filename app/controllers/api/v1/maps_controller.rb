@@ -10,14 +10,15 @@ class Api::V1::MapsController < ApplicationController
   end
 
   def infographic
+    # Hack to keep last stay length up to date.
+    @map.map_places.last.save
+    @map.reload
+
     @states = Calculations::States.new(@map).data
     @categories = Calculations::Categories.new(@map).data
     @monthlies = Calculations::Monthlies.new(@map).data
 
     @map = MapDecorator.decorate(@map)
-
-    # Hack to keep last stay length up to date.
-    @map.map_places.last.save
 
     render 'api/v1/maps/infographic'
   end
