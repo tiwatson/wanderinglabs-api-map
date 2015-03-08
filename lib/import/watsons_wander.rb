@@ -1,9 +1,9 @@
 module Import
 class WatsonsWander
 
-  # MapPlace.create(map_id: 1, title: 'Bill Frederick Park', arrived: Date.parse('28-02-2015'), latitude: 28.503071, longitude: -81.476975, price: 19, category: 'CP')
+  # MapPlace.create(map_id: 1, title: 'Anastasia State Park', arrived: Date.parse('07-03-2015'), latitude: 29.873771, longitude: -81.277875, price: 28, category: 'SP')
 
-  # reload! && load('import/watsons_wander.rb') && Import::WatsonsWander.import('28-02-2015')
+  # reload! && load('import/watsons_wander.rb') && Import::WatsonsWander.import('07-03-2015')
 
   # curl https://wanderinglabs-api-map.herokuapp.com/api/v1/maps/1.json > track_points.json
   # curl https://wanderinglabs-api-map.herokuapp.com/api/v1/maps/1/d3_current.json > current.json
