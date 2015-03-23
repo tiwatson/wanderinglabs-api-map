@@ -1,7 +1,8 @@
 module Import
 class WatsonsWander
 
-  # MapPlace.create(map_id: 1, title: 'Blythe Island Regional Park', arrived: Date.parse('15-03-2015'), latitude: 31.155686, longitude: -81.5427198, price: 32, category: 'CP')
+  # MapPlace.create(map_id: 1, title: 'Savannah GA Visitors Center', arrived: Date.parse('21-03-2015'), latitude: 32.076650, longitude: -81.100185, price: 14, category: 'PL')
+  # MapPlace.create(map_id: 1, title: 'Skidaway Island State Park', arrived: Date.parse('22-03-2015'), latitude: 31.950796, longitude: -81.051410, price: 39, category: 'SP')
 
   # reload! && load('import/watsons_wander.rb') && Import::WatsonsWander.import('15-03-2015')
 
