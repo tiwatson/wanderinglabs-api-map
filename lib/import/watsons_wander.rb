@@ -1,10 +1,9 @@
 module Import
 class WatsonsWander
 
-  # MapPlace.create(map_id: 1, title: 'Charleston SC Visitors Center', arrived: Date.parse('28-03-2015'), latitude: 32.791517, longitude: -79.936698, price: 16, category: 'PL')
-  # MapPlace.create(map_id: 1, title: 'Private Property', arrived: Date.parse('29-03-2015'), latitude: 33.0890624, longitude: -79.4726261, price: 0, category: 'PR')
+  # MapPlace.create(map_id: 1, title: 'Private Property', arrived: Date.parse('03-04-2015'), latitude: 34.6732476, longitude: -77.2079468, price: 0, category: 'PR')
 
-  # reload! && load('import/watsons_wander.rb') && Import::WatsonsWander.import('28-03-2015')
+  # reload! && load('import/watsons_wander.rb') && Import::WatsonsWander.import('03-04-2015')
 
   # curl https://wanderinglabs-api-map.herokuapp.com/api/v1/maps/1.json > track_points.json
   # curl https://wanderinglabs-api-map.herokuapp.com/api/v1/maps/1/d3_current.json > current.json
