@@ -3,7 +3,7 @@ class Map < ActiveRecord::Base
 
 
   def d3_tracks(year)
-    map_places.select { |mp| mp.ww_year == year }.collect { |mp| mp.arrival_path_small }.flatten(1)
+    DouglasPeucker::LineSimplifier.new(m.map_places.select { |mp| mp.ww_year == year }.map(&:arrival_path).flatten(1).collect { |i| [i[0].to_f, i[1].to_f]}).threshold(0.05).points
   end
 
 end

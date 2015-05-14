@@ -2,8 +2,9 @@ module Import
 class WatsonsWander
 
   # MapPlace.create(map_id: 1, title: 'Virgnia Highland Haven Airstream Park', arrived: Date.parse('10-05-2015'), latitude: 37.053372, longitude: -80.192659, price: 27, category: 'PP')
-  # reload! && load('import/watsons_wander.rb') && Import::WatsonsWander.import('03-05-2015')
-  # MapPlace.find_each { |m| m.save } && UpdateInfographic.perform
+  # reload! && load('import/watsons_wander.rb') && Import::WatsonsWander.import('10-05-2015')
+  # MapPlace.find_each { |m| m.save }
+  # UpdateInfographic.perform
 
   # curl https://wanderinglabs-api-map.herokuapp.com/api/v1/maps/1.json > track_points.json
   # curl https://wanderinglabs-api-map.herokuapp.com/api/v1/maps/1/d3_current.json > current.json
