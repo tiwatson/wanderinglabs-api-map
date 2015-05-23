@@ -1,8 +1,8 @@
 module Import
 class WatsonsWander
 
-  # MapPlace.create(map_id: 1, title: 'Rocky Gap State Park', arrived: Date.parse('18-05-2015'), latitude: 39.710103,  longitude: -78.646200, price: 23, category: 'SP')
-  # reload! && load('import/watsons_wander.rb') && Import::WatsonsWander.import('18-05-2015')
+  # MapPlace.create(map_id: 1, title: 'DelFest (Bluegrass Festival)', arrived: Date.parse('21-05-2015'), latitude: 39.608755,  longitude: -78.801908, price: 31, category: 'CP')
+  # reload! && load('import/watsons_wander.rb') && Import::WatsonsWander.import('21-05-2015')
   # MapPlace.find_each { |m| m.save }
   # UpdateInfographic.perform
 
