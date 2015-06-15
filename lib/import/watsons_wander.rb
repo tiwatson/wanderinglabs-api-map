@@ -1,8 +1,8 @@
 module Import
 class WatsonsWander
 
-  # MapPlace.create(map_id: 1, title: 'Lums Pond State Park', arrived: Date.parse('04-06-2015'), latitude: 39.551123, longitude: -75.719929, price: 27, category: 'SP')
-  # reload! && load('import/watsons_wander.rb') && Import::WatsonsWander.import('04-06-2015')
+  # MapPlace.create(map_id: 1, title: 'Killingworth back yard', arrived: Date.parse('15-06-2015'), latitude: 41.409993, longitude: -72.610637, price: 0, category: 'PR')
+  # reload! && load('import/watsons_wander.rb') && Import::WatsonsWander.import('15-06-2015')
   # MapPlace.find_each { |m| m.save }
   # UpdateInfographic.perform
 
