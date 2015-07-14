@@ -65,8 +65,10 @@ class MapPlace < ActiveRecord::Base
       0
     elsif self.arrived < Date.parse('14-06-2014')
       1
-    else
+    elsif self.arrived < Date.parse('14-06-2015')
       2
+    else
+      3
     end
   end
 
