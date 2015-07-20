@@ -1,8 +1,8 @@
 module Import
 class WatsonsWander
 
-  # MapPlace.create(map_id: 1, title: 'Camden Hills State Park', arrived: Date.parse('12-07-2015'), latitude: 44.233395, longitude: -69.047608, price: 25, category: 'SP')
-  # reload! && load('import/watsons_wander.rb') && Import::WatsonsWander.import('12-07-2015')
+  # MapPlace.create(map_id: 1, title: 'Narrows Too', arrived: Date.parse('19-07-2015'), latitude: 44.438484, longitude: -68.366239, price: 50, category: 'PP')
+  # reload! && load('import/watsons_wander.rb') && Import::WatsonsWander.import('19-07-2015')
   # MapPlace.find_each { |m| m.save }
   # UpdateInfographic.perform
 
