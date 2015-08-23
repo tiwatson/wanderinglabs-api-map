@@ -1,8 +1,17 @@
 module Import
 class WatsonsWander
 
-  # MapPlace.create(map_id: 1, title: 'Winslow City Park', arrived: Date.parse('09-08-2015'), latitude: 43.803061, longitude: -70.112414, price: 36, category: 'CP')
-  # reload! && load('import/watsons_wander.rb') && Import::WatsonsWander.import('09-08-2015')
+  # MapPlace.create(map_id: 1, title: 'Cabela\'s Retail Store', arrived: Date.parse('14-08-2015'), latitude: 43.603839, longitude: -70.370571, price: 0, category: 'PL')
+  # reload! && load('import/watsons_wander.rb') && Import::WatsonsWander.import('14-08-2015')
+
+
+  # MapPlace.create(map_id: 1, title: 'Pine Hollow Campground', arrived: Date.parse('15-08-2015'), latitude: 43.615380, longitude: -71.481294, price: 35, category: 'PP')
+  # reload! && load('import/watsons_wander.rb') && Import::WatsonsWander.import('15-08-2015')
+
+  # MapPlace.create(map_id: 1, title: 'Moose Brook State Park', arrived: Date.parse('22-08-2015'), latitude: 44.399734, longitude: -71.230335, price: 25, category: 'SP')
+  # reload! && load('import/watsons_wander.rb') && Import::WatsonsWander.import('22-08-2015')
+
+
   # MapPlace.find_each { |m| m.save }
   # UpdateInfographic.perform
 
