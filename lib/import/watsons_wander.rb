@@ -1,15 +1,11 @@
 module Import
 class WatsonsWander
 
-  # MapPlace.create(map_id: 1, title: 'Cabela\'s Retail Store', arrived: Date.parse('14-08-2015'), latitude: 43.603839, longitude: -70.370571, price: 0, category: 'PL')
-  # reload! && load('import/watsons_wander.rb') && Import::WatsonsWander.import('14-08-2015')
+  # MapPlace.create(map_id: 1, title: 'Driveway - Jeffersonville', arrived: Date.parse('29-08-2015'), latitude: 44.620969, longitude: -72.823902, price: 0, category: 'PR')
+  # reload! && load('import/watsons_wander.rb') && Import::WatsonsWander.import('29-08-2015')
 
-
-  # MapPlace.create(map_id: 1, title: 'Pine Hollow Campground', arrived: Date.parse('15-08-2015'), latitude: 43.615380, longitude: -71.481294, price: 35, category: 'PP')
-  # reload! && load('import/watsons_wander.rb') && Import::WatsonsWander.import('15-08-2015')
-
-  # MapPlace.create(map_id: 1, title: 'Moose Brook State Park', arrived: Date.parse('22-08-2015'), latitude: 44.399734, longitude: -71.230335, price: 25, category: 'SP')
-  # reload! && load('import/watsons_wander.rb') && Import::WatsonsWander.import('22-08-2015')
+  # MapPlace.create(map_id: 1, title: 'Driveway - Shelburne', arrived: Date.parse('30-08-2015'), latitude: 44.412093, longitude: -73.214802, price: 0, category: 'PR')
+  # reload! && load('import/watsons_wander.rb') && Import::WatsonsWander.import('30-08-2015')
 
 
   # MapPlace.find_each { |m| m.save }
