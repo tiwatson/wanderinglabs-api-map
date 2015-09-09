@@ -4,8 +4,8 @@ class WatsonsWander
   # MapPlace.create(map_id: 1, title: 'Driveway - Jeffersonville', arrived: Date.parse('29-08-2015'), latitude: 44.620969, longitude: -72.823902, price: 0, category: 'PR')
   # reload! && load('import/watsons_wander.rb') && Import::WatsonsWander.import('29-08-2015')
 
-  # MapPlace.create(map_id: 1, title: 'Driveway - Shelburne', arrived: Date.parse('30-08-2015'), latitude: 44.412093, longitude: -73.214802, price: 0, category: 'PR')
-  # reload! && load('import/watsons_wander.rb') && Import::WatsonsWander.import('30-08-2015')
+  # MapPlace.create(map_id: 1, title: 'Driveway - Cambridge', arrived: Date.parse('07-09-2015'), latitude: 44.644639, longitude: -72.906233, price: 0, category: 'PR')
+  # reload! && load('import/watsons_wander.rb') && Import::WatsonsWander.import('07-09-2015')
 
 
   # MapPlace.find_each { |m| m.save }
