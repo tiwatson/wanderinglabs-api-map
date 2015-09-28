@@ -1,11 +1,11 @@
 module Import
 class WatsonsWander
 
-  # MapPlace.create(map_id: 1, title: 'Driveway - Jeffersonville', arrived: Date.parse('29-08-2015'), latitude: 44.620969, longitude: -72.823902, price: 0, category: 'PR')
-  # reload! && load('import/watsons_wander.rb') && Import::WatsonsWander.import('29-08-2015')
+  # MapPlace.create(map_id: 1, title: 'Moreau State Park', arrived: Date.parse('26-09-2015'), latitude: 43.227630, longitude: -73.706542, price: 26, category: 'SP')
+  # load('import/watsons_wander.rb') && Import::WatsonsWander.import('26-09-2015')
 
-  # MapPlace.create(map_id: 1, title: 'Driveway - Cambridge', arrived: Date.parse('07-09-2015'), latitude: 44.644639, longitude: -72.906233, price: 0, category: 'PR')
-  # reload! && load('import/watsons_wander.rb') && Import::WatsonsWander.import('07-09-2015')
+  # MapPlace.create(map_id: 1, title: 'Glimmerglass State Park', arrived: Date.parse('27-09-2015'), latitude: 42.794311, longitude: -74.865243, price: 17, category: 'SP')
+  # load('import/watsons_wander.rb') && Import::WatsonsWander.import('27-09-2015')
 
 
   # MapPlace.find_each { |m| m.save }
