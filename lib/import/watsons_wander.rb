@@ -1,12 +1,13 @@
 module Import
 class WatsonsWander
 
-  # MapPlace.create(map_id: 1, title: 'Walmart', arrived: Date.parse('30-09-2015'), latitude: 41.116237, longitude: -77.480526, price: 0, category: 'PL')
-  # load('import/watsons_wander.rb') && Import::WatsonsWander.import('30-09-2015')
+  # MapPlace.create(map_id: 1, title: 'Bald Eagle State Park', arrived: Date.parse('01-10-2015'), latitude: 41.037026, longitude: -77.642687, price: 27, category: 'PL')
+  # load('import/watsons_wander.rb') && Import::WatsonsWander.import('01-10-2015')
 
+  # MapPlace.create(map_id: 1, title: 'Battle Run Campground', arrived: Date.parse('03-10-2015'), latitude: 38.222447, longitude: -80.908287, price: 30, category: 'ARMY')
+  # load('import/watsons_wander.rb') && Import::WatsonsWander.import('03-10-2015')
 
-  # MapPlace.find_each { |m| m.save }
-  # UpdateInfographic.perform
+  # MapPlace.find_each { |m| m.save } && UpdateInfographic.perform
 
   # curl https://wanderinglabs-api-map.herokuapp.com/api/v1/maps/1.json > track_points.json
   # curl https://wanderinglabs-api-map.herokuapp.com/api/v1/maps/1/d3_current.json > current.json
