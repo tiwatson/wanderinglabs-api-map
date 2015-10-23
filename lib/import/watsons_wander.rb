@@ -1,8 +1,8 @@
 module Import
 class WatsonsWander
 
-  # MapPlace.create(map_id: 1, title: 'Walmart Morehead', arrived: Date.parse('09-10-2015'), latitude: 38.200086, longitude: -83.479700, price: 0, category: 'PL')
-  # load('import/watsons_wander.rb') && Import::WatsonsWander.import('09-10-2015')
+  # MapPlace.create(map_id: 1, title: 'Kentucky Horse Park', arrived: Date.parse('15-10-2015'), latitude: 38.143096, longitude: -84.509769, price: 20, category: 'SP')
+  # load('import/watsons_wander.rb') && Import::WatsonsWander.import('15-10-2015')
 
   # MapPlace.create(map_id: 1, title: 'Twin Knobs Campground', arrived: Date.parse('10-10-2015'), latitude: 38.091882, longitude: -83.515835, price: 29, category: 'NF')
   # load('import/watsons_wander.rb') && Import::WatsonsWander.import('10-10-2015')
