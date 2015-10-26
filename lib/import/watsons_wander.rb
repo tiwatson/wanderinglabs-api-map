@@ -1,11 +1,11 @@
 module Import
 class WatsonsWander
 
-  # MapPlace.create(map_id: 1, title: 'Kentucky Horse Park', arrived: Date.parse('15-10-2015'), latitude: 38.143096, longitude: -84.509769, price: 20, category: 'SP')
-  # load('import/watsons_wander.rb') && Import::WatsonsWander.import('15-10-2015')
+  # MapPlace.create(map_id: 1, title: 'Mammoth Cave Campground', arrived: Date.parse('24-10-2015'), latitude: 37.182663, longitude: -86.096950, price: 20, category: 'NP')
+  # load('import/watsons_wander.rb') && Import::WatsonsWander.import('24-10-2015')
 
-  # MapPlace.create(map_id: 1, title: 'Twin Knobs Campground', arrived: Date.parse('10-10-2015'), latitude: 38.091882, longitude: -83.515835, price: 29, category: 'NF')
-  # load('import/watsons_wander.rb') && Import::WatsonsWander.import('10-10-2015')
+  # MapPlace.create(map_id: 1, title: 'Pulaski County Park', arrived: Date.parse('25-10-2015'), latitude: 37.066874, longitude: -84.698788, price: 19, category: 'CP')
+  # load('import/watsons_wander.rb') && Import::WatsonsWander.import('25-10-2015')
 
   # MapPlace.find_each { |m| m.save }; UpdateInfographic.perform
 
