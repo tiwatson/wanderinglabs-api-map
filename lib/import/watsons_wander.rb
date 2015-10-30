@@ -1,8 +1,8 @@
 module Import
 class WatsonsWander
 
-  # MapPlace.create(map_id: 1, title: 'Mammoth Cave Campground', arrived: Date.parse('24-10-2015'), latitude: 37.182663, longitude: -86.096950, price: 20, category: 'NP')
-  # load('import/watsons_wander.rb') && Import::WatsonsWander.import('24-10-2015')
+  # MapPlace.create(map_id: 1, title: 'Standing Stone State Park', arrived: Date.parse('28-10-2015'), latitude: 36.474698, longitude: -85.412090, price: 20, category: 'SP')
+  # load('import/watsons_wander.rb') && Import::WatsonsWander.import('28-10-2015')
 
   # MapPlace.create(map_id: 1, title: 'Pulaski County Park', arrived: Date.parse('25-10-2015'), latitude: 37.066874, longitude: -84.698788, price: 19, category: 'CP')
   # load('import/watsons_wander.rb') && Import::WatsonsWander.import('25-10-2015')
