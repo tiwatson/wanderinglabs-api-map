@@ -1,8 +1,8 @@
 module Import
 class WatsonsWander
 
-  # MapPlace.create(map_id: 1, title: 'Bear Creek RV & Campground', arrived: Date.parse('31-10-2015'), latitude: 35.557580, longitude: -82.604074, price: 40, category: 'PP')
-  # load('import/watsons_wander.rb') && Import::WatsonsWander.import('31-10-2015')
+  # MapPlace.create(map_id: 1, title: 'Elmore RV Park', arrived: Date.parse('03-11-2015'), latitude: 35.256378, longitude: -80.785059, price: 32, category: 'PP')
+  # load('import/watsons_wander.rb') && Import::WatsonsWander.import('03-11-2015')
 
   # MapPlace.create(map_id: 1, title: 'Pulaski County Park', arrived: Date.parse('25-10-2015'), latitude: 37.066874, longitude: -84.698788, price: 19, category: 'CP')
   # load('import/watsons_wander.rb') && Import::WatsonsWander.import('25-10-2015')
