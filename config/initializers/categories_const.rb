@@ -15,5 +15,6 @@ CATEGORY_NAMES = {
   BLM: 'BLM Campground',
   SPB: 'State Park Boondocking',
   NFB: 'National Forest Boondocking',
-  NPB: 'National Park Boondocking'
+  NPB: 'National Park Boondocking',
+  TVA: 'Tennessee Valley Authority'
 }
