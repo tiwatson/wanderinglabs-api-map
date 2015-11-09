@@ -1,17 +1,18 @@
 module Import
 class WatsonsWander
 
-  # MapPlace.create(map_id: 1, title: 'Smokemont Campground', arrived: Date.parse('07-11-2015'), latitude: 35.555885, longitude: -83.311898, price: 17, category: 'NP')
-  # load('import/watsons_wander.rb') && Import::WatsonsWander.import('07-11-2015')
+=begin
+  MapPlace.create(map_id: 1, title: 'Smokemont Campground', arrived: Date.parse('07-11-2015'), latitude: 35.555885, longitude: -83.311898, price: 17, category: 'NP')
+  load('import/watsons_wander.rb') && Import::WatsonsWander.import('07-11-2015')
 
-  # MapPlace.create(map_id: 1, title: 'Douglas Dam Headwater Campground', arrived: Date.parse('08-11-2015'), latitude: 35.959808, longitude: -83.535722, price: 25, category: 'TVA')
-  # load('import/watsons_wander.rb') && Import::WatsonsWander.import('08-11-2015')
+  MapPlace.create(map_id: 1, title: 'Douglas Dam Headwater Campground', arrived: Date.parse('08-11-2015'), latitude: 35.959808, longitude: -83.535722, price: 25, category: 'TVA')
+  load('import/watsons_wander.rb') && Import::WatsonsWander.import('08-11-2015')
 
-  # MapPlace.find_each { |m| m.save }; UpdateInfographic.perform
+  MapPlace.find_each { |m| m.save }; UpdateInfographic.perform
 
-  # curl https://wanderinglabs-api-map.herokuapp.com/api/v1/maps/1.json > track_points.json
-  # curl https://wanderinglabs-api-map.herokuapp.com/api/v1/maps/1/d3_current.json > current.json
-
+  curl https://wanderinglabs-api-map.herokuapp.com/api/v1/maps/1.json > track_points.json
+  curl https://wanderinglabs-api-map.herokuapp.com/api/v1/maps/1/d3_current.json > current.json
+=end
 
   def parse_out_descriptions
     MapPlace.find_each do |mp|
