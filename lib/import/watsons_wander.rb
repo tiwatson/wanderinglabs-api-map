@@ -2,11 +2,15 @@ module Import
 class WatsonsWander
 
 =begin
-  MapPlace.create(map_id: 1, title: 'Rock Island State Park', arrived: Date.parse('15-11-2015'), latitude: 35.812343, longitude: -85.647198, price: 23, category: 'SP')
-  load('import/watsons_wander.rb') && Import::WatsonsWander.import('15-11-2015')
+  MapPlace.create(map_id: 1, title: 'Edgar Evins State Park', arrived: Date.parse('21-11-2015'), latitude: 36.081584, longitude: -85.830607, price: 23, category: 'SP')
+  load('import/watsons_wander.rb') && Import::WatsonsWander.import('21-11-2015')
 
-  MapPlace.create(map_id: 1, title: 'Douglas Dam Headwater Campground', arrived: Date.parse('08-11-2015'), latitude: 35.959808, longitude: -83.535722, price: 25, category: 'TVA')
-  load('import/watsons_wander.rb') && Import::WatsonsWander.import('08-11-2015')
+  MapPlace.create(map_id: 1, title: 'Grand Ole RV Resort', arrived: Date.parse('25-11-2015'), latitude: 36.338026, longitude: -86.719857, price: 35, category: 'PP')
+  load('import/watsons_wander.rb') && Import::WatsonsWander.import('25-11-2015')
+
+  MapPlace.create(map_id: 1, title: 'Jeff Busby Campground', arrived: Date.parse('28-11-2015'), latitude: 33.417144, longitude: -89.265984, price: 0, category: 'NP')
+  load('import/watsons_wander.rb') && Import::WatsonsWander.import('28-11-2015')
+
 
   MapPlace.find_each { |m| m.save }; UpdateInfographic.perform
 
