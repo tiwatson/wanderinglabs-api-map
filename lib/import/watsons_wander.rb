@@ -2,8 +2,8 @@ module Import
 class WatsonsWander
 
 =begin
-  MapPlace.create(map_id: 1, title: 'Edgar Evins State Park', arrived: Date.parse('21-11-2015'), latitude: 36.081584, longitude: -85.830607, price: 23, category: 'SP')
-  load('import/watsons_wander.rb') && Import::WatsonsWander.import('21-11-2015')
+  MapPlace.create(map_id: 1, title: 'Indian Creek', arrived: Date.parse('29-11-2015'), latitude: 31.112407, longitude: -92.473281, price: 18, category: 'SP')
+  load('import/watsons_wander.rb') && Import::WatsonsWander.import('29-11-2015')
 
   MapPlace.create(map_id: 1, title: 'Grand Ole RV Resort', arrived: Date.parse('25-11-2015'), latitude: 36.338026, longitude: -86.719857, price: 35, category: 'PP')
   load('import/watsons_wander.rb') && Import::WatsonsWander.import('25-11-2015')
