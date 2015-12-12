@@ -2,8 +2,21 @@ module Import
 class WatsonsWander
 
 =begin
-  MapPlace.create(map_id: 1, title: 'Martin Dies Jr State Park', arrived: Date.parse('02-12-2015'), latitude: 30.858662, longitude: -94.181670, price: 24, category: 'SP')
-  load('import/watsons_wander.rb') && Import::WatsonsWander.import('02-12-2015')
+
+  MapPlace.create(map_id: 1, title: 'Yegua Creek Park', arrived: Date.parse('07-12-2015'), latitude: 30.307686, longitude: -96.542743, price: 25, category: 'ARMY')
+  load('import/watsons_wander.rb') && Import::WatsonsWander.import('07-12-2015')
+
+  MapPlace.create(map_id: 1, title: 'Wallmart - Kerrville', arrived: Date.parse('09-12-2015'), latitude: 30.062432, longitude: -99.167777, price: 0, category: 'PL')
+  load('import/watsons_wander.rb') && Import::WatsonsWander.import('09-12-2015')
+
+  MapPlace.create(map_id: 1, title: 'Caverns of Sonora', arrived: Date.parse('10-12-2015'), latitude: 30.554747, longitude: -100.811148, price: 20, category: 'PP')
+  load('import/watsons_wander.rb') && Import::WatsonsWander.import('10-12-2015')
+
+  MapPlace.create(map_id: 1, title: 'Camping World', arrived: Date.parse('11-12-2015'), latitude: 31.980226, longitude: -106.580800, price: 0, category: 'PL')
+  load('import/watsons_wander.rb') && Import::WatsonsWander.import('10-12-2015')
+
+  MapPlace.create(map_id: 1, title: 'SKP Saguaro Co-Op', arrived: Date.parse('12-12-2015'), latitude: 31.942267, longitude: -110.294029, price: 8, category: 'PP')
+  load('import/watsons_wander.rb') && Import::WatsonsWander.import('12-12-2015')
 
   MapPlace.find_each { |m| m.save }; UpdateInfographic.perform
 
