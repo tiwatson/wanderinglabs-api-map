@@ -13,7 +13,7 @@ class WatsonsWander
   load('import/watsons_wander.rb') && Import::WatsonsWander.import('10-12-2015')
 
   MapPlace.create(map_id: 1, title: 'Camping World', arrived: Date.parse('11-12-2015'), latitude: 31.980226, longitude: -106.580800, price: 0, category: 'PL')
-  load('import/watsons_wander.rb') && Import::WatsonsWander.import('10-12-2015')
+  load('import/watsons_wander.rb') && Import::WatsonsWander.import('11-12-2015')
 
   MapPlace.create(map_id: 1, title: 'SKP Saguaro Co-Op', arrived: Date.parse('12-12-2015'), latitude: 31.942267, longitude: -110.294029, price: 8, category: 'PP')
   load('import/watsons_wander.rb') && Import::WatsonsWander.import('12-12-2015')

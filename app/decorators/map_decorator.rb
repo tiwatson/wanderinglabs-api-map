@@ -52,7 +52,7 @@ class MapDecorator < Draper::Decorator
   end
 
   def current_state_stay
-    object.map_places.where(state: current_state).sum(:stay_length)
+    object.map_places.where(state: current_state).where('arrived > ?', 1.year.ago).sum(:stay_length)
   end
 
   def path
