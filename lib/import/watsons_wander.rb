@@ -3,12 +3,8 @@ class WatsonsWander
 
 =begin
 
-  MapPlace.create(map_id: 1, title: 'Gilbert Ray Campground', arrived: Date.parse('19-12-2015'), latitude: 32.219409, longitude: -111.144240, price: 20, category: 'CP')
-  load('import/watsons_wander.rb') && Import::WatsonsWander.import('19-12-2015')
-
-  MapPlace.create(map_id: 1, title: 'Anza Borrego Boondocking', arrived: Date.parse('26-12-2015'), latitude: 33.295613, longitude: -116.286768, price: 0, category: 'SPB')
-  load('import/watsons_wander.rb') && Import::WatsonsWander.import('26-12-2015')
-
+  MapPlace.create(map_id: 1, title: 'Kofa Wilderness', arrived: Date.parse('10-01-2016'), latitude: 33.487460, longitude: -114.183024, price: 0, category: 'BLMB')
+  load('import/watsons_wander.rb') && Import::WatsonsWander.import('10-01-2016')
 
   MapPlace.find_each { |m| m.save }; UpdateInfographic.perform
 
