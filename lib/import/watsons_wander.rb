@@ -3,8 +3,8 @@ class WatsonsWander
 
 =begin
 
-  MapPlace.create(map_id: 1, title: 'Casino Arizona', arrived: Date.parse('29-01-2016'), latitude: 33.456684, longitude: -111.883988, price: 0, category: 'PL')
-  load('import/watsons_wander.rb') && Import::WatsonsWander.import('29-01-2016')
+  MapPlace.create(map_id: 1, title: 'Joshua Tree South', arrived: Date.parse('07-02-2016'), latitude: 33.677270, longitude: -115.816165, price: 0, category: 'BLMB')
+  load('import/watsons_wander.rb') && Import::WatsonsWander.import('07-02-2016')
 
   MapPlace.create(map_id: 1, title: 'Kofa Wilderness', arrived: Date.parse('31-01-2016'), latitude: 33.487460, longitude: -114.183024, price: 0, category: 'BLMB')
   load('import/watsons_wander.rb') && Import::WatsonsWander.import('31-01-2016')
