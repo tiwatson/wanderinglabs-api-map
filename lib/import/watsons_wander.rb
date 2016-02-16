@@ -3,11 +3,11 @@ class WatsonsWander
 
 =begin
 
-  MapPlace.create(map_id: 1, title: 'Joshua Tree South', arrived: Date.parse('07-02-2016'), latitude: 33.677270, longitude: -115.816165, price: 0, category: 'BLMB')
-  load('import/watsons_wander.rb') && Import::WatsonsWander.import('07-02-2016')
+  MapPlace.create(map_id: 1, title: 'Tortoise Rock Casino', arrived: Date.parse('13-02-2016'), latitude: 34.120246, longitude: -116.050453, price: 0, category: 'PL')
+  load('import/watsons_wander.rb') && Import::WatsonsWander.import('13-02-2016')
 
-  MapPlace.create(map_id: 1, title: 'Kofa Wilderness', arrived: Date.parse('31-01-2016'), latitude: 33.487460, longitude: -114.183024, price: 0, category: 'BLMB')
-  load('import/watsons_wander.rb') && Import::WatsonsWander.import('31-01-2016')
+  MapPlace.create(map_id: 1, title: 'Mojave Bookdocking', arrived: Date.parse('14-02-2016'), latitude: 34.982380, longitude: -115.388900, price: 0, category: 'NPB')
+  load('import/watsons_wander.rb') && Import::WatsonsWander.import('14-02-2016')
 
   MapPlace.find_each { |m| m.save }; UpdateInfographic.perform
 
