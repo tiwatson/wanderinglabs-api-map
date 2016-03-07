@@ -3,11 +3,8 @@ class WatsonsWander
 
 =begin
 
-  MapPlace.create(map_id: 1, title: 'Lake Mead Boondocking', arrived: Date.parse('20-02-2016'), latitude: 36.126470, longitude: -114.834485, price: 0, category: 'NPB')
-  load('import/watsons_wander.rb') && Import::WatsonsWander.import('20-02-2016')
-
-  MapPlace.create(map_id: 1, title: 'Stewarts Point', arrived: Date.parse('28-02-2016'), latitude: 36.370073, longitude: -114.391920, price: 0, category: 'NPB')
-  load('import/watsons_wander.rb') && Import::WatsonsWander.import('28-02-2016')
+  MapPlace.create(map_id: 1, title: 'Sand Hollow State Park', arrived: Date.parse('06-03-2016'), latitude: 37.122922, longitude: -113.385045, price: 28, category: 'SP')
+  load('import/watsons_wander.rb') && Import::WatsonsWander.import('06-03-2016')
 
   MapPlace.find_each { |m| m.save }; UpdateInfographic.perform
 
