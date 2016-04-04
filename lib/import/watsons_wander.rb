@@ -3,8 +3,8 @@ class WatsonsWander
 
 =begin
 
-  MapPlace.create(map_id: 1, title: 'Spencer Flat Rd', arrived: Date.parse('26-03-2016'), latitude: 37.742619, longitude: -111.447681, price: 0, category: 'BLMB')
-  load('import/watsons_wander.rb') && Import::WatsonsWander.import('26-03-2016')
+  MapPlace.create(map_id: 1, title: 'Thousand Lakes RV Park', arrived: Date.parse('03-04-2016'), latitude: 38.301132, longitude: -111.444777, price: 34, category: 'PP')
+  load('import/watsons_wander.rb') && Import::WatsonsWander.import('03-04-2016')
 
   MapPlace.find_each { |m| m.save }; UpdateInfographic.perform
 
