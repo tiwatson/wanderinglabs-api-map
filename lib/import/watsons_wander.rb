@@ -3,8 +3,14 @@ class WatsonsWander
 
 =begin
 
-  MapPlace.create(map_id: 1, title: 'Willow Springs Trail', arrived: Date.parse('09-04-2016'), latitude: 38.698135, longitude: -109.683975, price: 0, category: 'BLMB')
-  load('import/watsons_wander.rb') && Import::WatsonsWander.import('09-04-2016')
+  MapPlace.create(map_id: 1, title: 'Dalton Well Road', arrived: Date.parse('16-04-2016'), latitude: 38.718034, longitude: -109.689438, price: 0, category: 'BLMB')
+  load('import/watsons_wander.rb') && Import::WatsonsWander.import('16-04-2016')
+
+  MapPlace.create(map_id: 1, title: 'Horsethief Campground', arrived: Date.parse('29-04-2016'), latitude: 38.583736, longitude: -109.815474, price: 15, category: 'BLM')
+  load('import/watsons_wander.rb') && Import::WatsonsWander.import('29-04-2016')
+
+  MapPlace.create(map_id: 1, title: '25 Road', arrived: Date.parse('01-05-2016'), latitude: 39.173176, longitude: -108.570024, price: 0, category: 'BLMB')
+  load('import/watsons_wander.rb') && Import::WatsonsWander.import('01-05-2016')
 
   MapPlace.find_each { |m| m.save }; UpdateInfographic.perform
 
