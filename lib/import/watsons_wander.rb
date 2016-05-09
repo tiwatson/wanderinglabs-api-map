@@ -3,14 +3,14 @@ class WatsonsWander
 
 =begin
 
-  MapPlace.create(map_id: 1, title: 'Dalton Well Road', arrived: Date.parse('16-04-2016'), latitude: 38.718034, longitude: -109.689438, price: 0, category: 'BLMB')
-  load('import/watsons_wander.rb') && Import::WatsonsWander.import('16-04-2016')
+  MapPlace.create(map_id: 1, title: 'Walmart - Craig', arrived: Date.parse('06-05-2016'), latitude: 40.513195, longitude: -107.569764, price: 0, category: 'PL')
+  load('import/watsons_wander.rb') && Import::WatsonsWander.import('06-05-2016')
 
-  MapPlace.create(map_id: 1, title: 'Horsethief Campground', arrived: Date.parse('29-04-2016'), latitude: 38.583736, longitude: -109.815474, price: 15, category: 'BLM')
-  load('import/watsons_wander.rb') && Import::WatsonsWander.import('29-04-2016')
+  MapPlace.create(map_id: 1, title: 'Walmart - Casper', arrived: Date.parse('07-05-2016'), latitude: 42.818018, longitude: -106.372218, price: 0, category: 'PL')
+  load('import/watsons_wander.rb') && Import::WatsonsWander.import('07-05-2016')
 
-  MapPlace.create(map_id: 1, title: '25 Road', arrived: Date.parse('01-05-2016'), latitude: 39.173176, longitude: -108.570024, price: 0, category: 'BLMB')
-  load('import/watsons_wander.rb') && Import::WatsonsWander.import('01-05-2016')
+  MapPlace.create(map_id: 1, title: 'Belle Fourche River Campground', arrived: Date.parse('08-05-2016'), latitude: 44.582037, longitude: -104.705549, price: 12, category: 'NP')
+  load('import/watsons_wander.rb') && Import::WatsonsWander.import('08-05-2016')
 
   MapPlace.find_each { |m| m.save }; UpdateInfographic.perform
 
