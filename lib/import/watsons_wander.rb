@@ -3,8 +3,20 @@ class WatsonsWander
 
 =begin
 
-  MapPlace.create(map_id: 1, title: 'Wooden Frog Campground', arrived: Date.parse('12-06-2016'), latitude: 48.480312, longitude: -93.068706, price: 14, category: 'SF')
-  load('import/watsons_wander.rb') && Import::WatsonsWander.import('12-06-2016')
+  MapPlace.create(map_id: 1, title: 'Grassy Island South', arrived: Date.parse('17-06-2016'), latitude: 48.487822, longitude: -93.044385, price: 25, category: 'NP')
+  load('import/watsons_wander.rb') && Import::WatsonsWander.import('17-06-2016')
+
+  MapPlace.create(map_id: 1, title: 'Arnold\'s Campground', arrived: Date.parse('19-06-2016'), latitude: 48.583222, longitude: -93.402490, price: 32, category: 'PP')
+  load('import/watsons_wander.rb') && Import::WatsonsWander.import('19-06-2016')
+
+  MapPlace.create(map_id: 1, title: 'Kakabeka Falls Provincial Park', arrived: Date.parse('20-06-2016'), latitude: 48.398484, longitude: -89.633142, price: 32, category: 'SP')
+  load('import/watsons_wander.rb') && Import::WatsonsWander.import('20-06-2016')
+
+  MapPlace.create(map_id: 1, title: 'Rainbow Falls Provincial Park', arrived: Date.parse('21-06-2016'), latitude: 48.839303, longitude: -87.443982, price: 32, category: 'SP')
+  load('import/watsons_wander.rb') && Import::WatsonsWander.import('21-06-2016')
+
+  MapPlace.create(map_id: 1, title: 'Neys Provincial Park', arrived: Date.parse('22-06-2016'), latitude: 48.787123, longitude: -86.625780, price: 28, category: 'SP')
+  load('import/watsons_wander.rb') && Import::WatsonsWander.import('22-06-2016')
 
   MapPlace.find_each { |m| m.save }; UpdateInfographic.perform
 
