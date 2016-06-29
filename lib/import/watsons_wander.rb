@@ -3,20 +3,23 @@ class WatsonsWander
 
 =begin
 
-  MapPlace.create(map_id: 1, title: 'Grassy Island South', arrived: Date.parse('17-06-2016'), latitude: 48.487822, longitude: -93.044385, price: 25, category: 'NP')
-  load('import/watsons_wander.rb') && Import::WatsonsWander.import('17-06-2016')
+  MapPlace.create(map_id: 1, title: 'Pukaskwa National Park', arrived: Date.parse('23-06-2016'), latitude: 48.590543, longitude: -86.292143, price: 32, category: 'NP')
+  load('import/watsons_wander.rb') && Import::WatsonsWander.import('23-06-2016')
 
-  MapPlace.create(map_id: 1, title: 'Arnold\'s Campground', arrived: Date.parse('19-06-2016'), latitude: 48.583222, longitude: -93.402490, price: 32, category: 'PP')
-  load('import/watsons_wander.rb') && Import::WatsonsWander.import('19-06-2016')
+  MapPlace.create(map_id: 1, title: 'Lake Superior Provincial Park', arrived: Date.parse('24-06-2016'), latitude: 47.334941, longitude: -84.616905, price: 32, category: 'SP')
+  load('import/watsons_wander.rb') && Import::WatsonsWander.import('24-06-2016')
 
-  MapPlace.create(map_id: 1, title: 'Kakabeka Falls Provincial Park', arrived: Date.parse('20-06-2016'), latitude: 48.398484, longitude: -89.633142, price: 32, category: 'SP')
-  load('import/watsons_wander.rb') && Import::WatsonsWander.import('20-06-2016')
+  MapPlace.create(map_id: 1, title: 'OLG Casino', arrived: Date.parse('25-06-2016'), latitude: 46.517620, longitude: -84.347320, price: 0, category: 'PL')
+  load('import/watsons_wander.rb') && Import::WatsonsWander.import('25-06-2016')
 
-  MapPlace.create(map_id: 1, title: 'Rainbow Falls Provincial Park', arrived: Date.parse('21-06-2016'), latitude: 48.839303, longitude: -87.443982, price: 32, category: 'SP')
-  load('import/watsons_wander.rb') && Import::WatsonsWander.import('21-06-2016')
+  MapPlace.create(map_id: 1, title: 'Walmart - Renfrew', arrived: Date.parse('26-06-2016'), latitude: 45.477776, longitude: -76.656018, price: 0, category: 'PL')
+  load('import/watsons_wander.rb') && Import::WatsonsWander.import('26-06-2016')
 
-  MapPlace.create(map_id: 1, title: 'Neys Provincial Park', arrived: Date.parse('22-06-2016'), latitude: 48.787123, longitude: -86.625780, price: 28, category: 'SP')
-  load('import/watsons_wander.rb') && Import::WatsonsWander.import('22-06-2016')
+  MapPlace.create(map_id: 1, title: 'Voyageurs Provincial Park', arrived: Date.parse('27-06-2016'), latitude: 45.561849, longitude: -74.429428, price: 38, category: 'SP')
+  load('import/watsons_wander.rb') && Import::WatsonsWander.import('27-06-2016')
+
+  MapPlace.create(map_id: 1, title: 'Walmart', arrived: Date.parse('28-06-2016'), latitude: 44.779033, longitude: -69.731564, price: 0, category: 'PL')
+  load('import/watsons_wander.rb') && Import::WatsonsWander.import('28-06-2016')
 
   MapPlace.find_each { |m| m.save }; UpdateInfographic.perform
 
