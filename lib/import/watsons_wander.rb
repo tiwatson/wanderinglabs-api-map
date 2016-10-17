@@ -3,14 +3,14 @@ class WatsonsWander
 
 =begin
 
-  MapPlace.create(map_id: 1, title: 'Cabelas', arrived: Date.parse('29-09-2016'), latitude: 42.390937, longitude: -71.595322, price: 0, category: 'PL')
-  load('import/watsons_wander.rb') && Import::WatsonsWander.import('29-09-2016')
+  MapPlace.create(map_id: 1, title: 'Coastal Acres Campground', arrived: Date.parse('08-10-2016'), latitude: 42.047611, longitude: -70.200187, price: 52, category: 'PP')
+  load('import/watsons_wander.rb') && Import::WatsonsWander.import('08-10-2016')
 
-  MapPlace.create(map_id: 1, title: 'Walmart', arrived: Date.parse('30-09-2016'), latitude: 41.781039, longitude: -70.745655, price: 0, category: 'PL')
-  load('import/watsons_wander.rb') && Import::WatsonsWander.import('30-09-2016')
+  MapPlace.create(map_id: 1, title: 'Walmart', arrived: Date.parse('15-10-2016'), latitude: 41.781039, longitude: -70.745655, price: 0, category: 'PL')
+  load('import/watsons_wander.rb') && Import::WatsonsWander.import('15-10-2016')
 
-  MapPlace.create(map_id: 1, title: 'Nickerson State Park', arrived: Date.parse('01-10-2016'), latitude: 41.750166, longitude: -70.020467, price: 27, category: 'SP')
-  load('import/watsons_wander.rb') && Import::WatsonsWander.import('01-10-2016')
+  MapPlace.create(map_id: 1, title: 'Fishermans Memorial Park, arrived: Date.parse('16-10-2016'), latitude: 41.379062, longitude: -71.490128, price: 25, category: 'SP')
+  load('import/watsons_wander.rb') && Import::WatsonsWander.import('16-10-2016')
 
   MapPlace.find_each { |m| m.save }; UpdateInfographic.perform
 
