@@ -9,7 +9,7 @@ class WatsonsWander
   MapPlace.create(map_id: 1, title: 'Walmart', arrived: Date.parse('15-10-2016'), latitude: 41.781039, longitude: -70.745655, price: 0, category: 'PL')
   load('import/watsons_wander.rb') && Import::WatsonsWander.import('15-10-2016')
 
-  MapPlace.create(map_id: 1, title: 'Fishermans Memorial Park, arrived: Date.parse('16-10-2016'), latitude: 41.379062, longitude: -71.490128, price: 25, category: 'SP')
+  MapPlace.create(map_id: 1, title: 'Fishermans Memorial Park', arrived: Date.parse('16-10-2016'), latitude: 41.379062, longitude: -71.490128, price: 25, category: 'SP')
   load('import/watsons_wander.rb') && Import::WatsonsWander.import('16-10-2016')
 
   MapPlace.find_each { |m| m.save }; UpdateInfographic.perform
