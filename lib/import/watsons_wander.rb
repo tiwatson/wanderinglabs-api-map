@@ -3,14 +3,11 @@ class WatsonsWander
 
 =begin
 
-  MapPlace.create(map_id: 1, title: 'Mohegan Sun Casino', arrived: Date.parse('24-10-2016'), latitude: 41.485386, longitude: -72.082834, price: 0, category: 'PL')
-  load('import/watsons_wander.rb') && Import::WatsonsWander.import('24-10-2016')
+  MapPlace.create(map_id: 1, title: 'Lums Pond State Park', arrived: Date.parse('30-10-2016'), latitude: 39.550315, longitude: -75.718201, price: 30, category: 'SP')
+  load('import/watsons_wander.rb') && Import::WatsonsWander.import('30-10-2016')
 
-  MapPlace.create(map_id: 1, title: 'Middletown Driveway', arrived: Date.parse('25-10-2016'), latitude: 41.586734, longitude: -72.700266, price: 0, category: 'PR')
-  load('import/watsons_wander.rb') && Import::WatsonsWander.import('25-10-2016')
-
-  MapPlace.create(map_id: 1, title: 'Northford Driveway', arrived: Date.parse('27-10-2016'), latitude: 41.394184, longitude: -72.815024, price: 0, category: 'PR')
-  load('import/watsons_wander.rb') && Import::WatsonsWander.import('27-10-2016')
+  MapPlace.create(map_id: 1, title: 'Westmoreland State Park', arrived: Date.parse('06-11-2016'), latitude: 38.168357, longitude: -76.867031, price: 35, category: 'SP')
+  load('import/watsons_wander.rb') && Import::WatsonsWander.import('06-11-2016')
 
   MapPlace.find_each { |m| m.save }; UpdateInfographic.perform
 
