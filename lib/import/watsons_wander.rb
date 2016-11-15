@@ -3,11 +3,8 @@ class WatsonsWander
 
 =begin
 
-  MapPlace.create(map_id: 1, title: 'Lums Pond State Park', arrived: Date.parse('30-10-2016'), latitude: 39.550315, longitude: -75.718201, price: 30, category: 'SP')
-  load('import/watsons_wander.rb') && Import::WatsonsWander.import('30-10-2016')
-
-  MapPlace.create(map_id: 1, title: 'Westmoreland State Park', arrived: Date.parse('06-11-2016'), latitude: 38.168357, longitude: -76.867031, price: 35, category: 'SP')
-  load('import/watsons_wander.rb') && Import::WatsonsWander.import('06-11-2016')
+  MapPlace.create(map_id: 1, title: 'Flanners Beach Campground', arrived: Date.parse('13-11-2016'), latitude: 34.981788, longitude: -76.948764, price: 17, category: 'NF')
+  load('import/watsons_wander.rb') && Import::WatsonsWander.import('13-11-2016')
 
   MapPlace.find_each { |m| m.save }; UpdateInfographic.perform
 
