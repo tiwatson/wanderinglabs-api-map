@@ -3,18 +3,11 @@ class WatsonsWander
 
 =begin
 
-  MapPlace.create(map_id: 1, title: 'Private Property', arrived: Date.parse('17-11-2016'), latitude: 34.6732476, longitude: -77.2079468, price: 0, category: 'PR')
-  load('import/watsons_wander.rb') && Import::WatsonsWander.import('17-11-2016')
+  MapPlace.create(map_id: 1, title: 'Juniper Springs', arrived: Date.parse('10-12-2016'), latitude: 29.183664, longitude: -81.709547, price: 21, category: 'NF')
+  load('import/watsons_wander.rb') && Import::WatsonsWander.import('10-12-2016')
 
-  MapPlace.create(map_id: 1, title: 'Camping World Racing Resort', arrived: Date.parse('27-11-2016'), latitude: 35.358883, longitude: -80.690455, price: 25, category: 'PP')
-  load('import/watsons_wander.rb') && Import::WatsonsWander.import('27-11-2016')
-
-  MapPlace.create(map_id: 1, title: 'Walmart - Hazlehurst', arrived: Date.parse('03-12-2016'), latitude: 31.861901, longitude: -82.586559, price: 0, category: 'PL')
-  load('import/watsons_wander.rb') && Import::WatsonsWander.import('03-12-2016')
-
-  MapPlace.create(map_id: 1, title: 'O\'leno State Park', arrived: Date.parse('04-12-2016'), latitude: 29.913164, longitude: -82.583713, price: 18, category: 'SP')
-  load('import/watsons_wander.rb') && Import::WatsonsWander.import('04-12-2016')
-
+  MapPlace.create(map_id: 1, title: 'Dupuis Campground', arrived: Date.parse('11-12-2016'), latitude: 27.005694, longitude: -80.560034, price: 0, category: 'SF')
+  load('import/watsons_wander.rb') && Import::WatsonsWander.import('11-12-2016')
 
   MapPlace.find_each { |m| m.save }; UpdateInfographic.perform
 
