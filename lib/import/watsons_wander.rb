@@ -3,11 +3,11 @@ class WatsonsWander
 
 =begin
 
-  MapPlace.create(map_id: 1, title: 'Juniper Springs', arrived: Date.parse('10-12-2016'), latitude: 29.183664, longitude: -81.709547, price: 21, category: 'NF')
-  load('import/watsons_wander.rb') && Import::WatsonsWander.import('10-12-2016')
+  MapPlace.create(map_id: 1, title: 'Miccosukee Casino', arrived: Date.parse('17-12-2016'), latitude: 25.765092, longitude: -80.486343, price: 0, category: 'PL')
+  load('import/watsons_wander.rb') && Import::WatsonsWander.import('17-12-2016')
 
-  MapPlace.create(map_id: 1, title: 'Dupuis Campground', arrived: Date.parse('11-12-2016'), latitude: 27.005694, longitude: -80.560034, price: 0, category: 'SF')
-  load('import/watsons_wander.rb') && Import::WatsonsWander.import('11-12-2016')
+  MapPlace.create(map_id: 1, title: 'Bahia Honda State Park', arrived: Date.parse('18-12-2016'), latitude: 24.658466, longitude: -81.277253, price: 39, category: 'SP')
+  load('import/watsons_wander.rb') && Import::WatsonsWander.import('18-12-2016')
 
   MapPlace.find_each { |m| m.save }; UpdateInfographic.perform
 
