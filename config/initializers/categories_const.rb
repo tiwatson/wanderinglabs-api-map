@@ -16,5 +16,6 @@ CATEGORY_NAMES = {
   SPB: 'State Park Boondocking',
   NFB: 'National Forest Boondocking',
   NPB: 'National Park Boondocking',
-  TVA: 'Tennessee Valley Authority'
+  TVA: 'Tennessee Valley Authority',
+  HR: 'House Rental'
 }

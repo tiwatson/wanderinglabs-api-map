@@ -3,11 +3,8 @@ class WatsonsWander
 
 =begin
 
-  MapPlace.create(map_id: 1, title: 'Miccosukee Casino', arrived: Date.parse('17-12-2016'), latitude: 25.765092, longitude: -80.486343, price: 0, category: 'PL')
-  load('import/watsons_wander.rb') && Import::WatsonsWander.import('17-12-2016')
-
-  MapPlace.create(map_id: 1, title: 'Bahia Honda State Park', arrived: Date.parse('18-12-2016'), latitude: 24.658466, longitude: -81.277253, price: 39, category: 'SP')
-  load('import/watsons_wander.rb') && Import::WatsonsWander.import('18-12-2016')
+  MapPlace.create(map_id: 1, title: 'House Rental', arrived: Date.parse('01-01-2017'), latitude: 24.691858, longitude: -81.370530, price: 110, category: 'HR')
+  load('import/watsons_wander.rb') && Import::WatsonsWander.import('01-01-2017')
 
   MapPlace.find_each { |m| m.save }; UpdateInfographic.perform
 
