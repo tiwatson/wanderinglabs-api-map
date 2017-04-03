@@ -3,8 +3,18 @@ class WatsonsWander
 
 =begin
 
-  MapPlace.create(map_id: 1, title: 'House Rental', arrived: Date.parse('01-01-2017'), latitude: 24.691858, longitude: -81.370530, price: 110, category: 'HR')
-  load('import/watsons_wander.rb') && Import::WatsonsWander.import('01-01-2017')
+  MapPlace.create(map_id: 1, title: 'Home Depot', arrived: Date.parse('31-03-2017'), latitude: 25.459666, longitude: -80.473180, price: 0, category: 'PL')
+  load('import/watsons_wander.rb') && Import::WatsonsWander.import('31-03-2017')
+
+  MapPlace.find_each { |m| m.save }; UpdateInfographic.perform
+
+  MapPlace.create(map_id: 1, title: 'Flamingo Campground', arrived: Date.parse('01-04-2017'), latitude: 25.138318, longitude: -80.942393, price: 30, category: 'NP')
+  load('import/watsons_wander.rb') && Import::WatsonsWander.import('01-04-2017')
+
+  MapPlace.find_each { |m| m.save }; UpdateInfographic.perform
+
+  MapPlace.create(map_id: 1, title: 'Koreshan State Park', arrived: Date.parse('02-04-2017'), latitude: 26.435863, longitude: -81.816911, price: 26, category: 'SP')
+  load('import/watsons_wander.rb') && Import::WatsonsWander.import('02-04-2017')
 
   MapPlace.find_each { |m| m.save }; UpdateInfographic.perform
 
