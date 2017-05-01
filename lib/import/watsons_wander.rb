@@ -3,15 +3,8 @@ class WatsonsWander
 
 =begin
 
-  MapPlace.create(map_id: 1, title: 'Walmart - Monroeville', arrived: Date.parse('21-04-2017'), latitude: 31.480618, longitude: -87.328322, price: 0, category: 'PL')
-  load('import/watsons_wander.rb') && Import::WatsonsWander.import('21-04-2017')
-
-  MapPlace.create(map_id: 1, title: 'Walmart - McGehee', arrived: Date.parse('22-04-2017'), latitude: 33.603995, longitude: -91.381589, price: 0, category: 'PL')
-  load('import/watsons_wander.rb') && Import::WatsonsWander.import('22-04-2017')
-
-  MapPlace.create(map_id: 1, title: 'Gulpha Gorge Campground', arrived: Date.parse('23-04-2017'), latitude: 34.525148, longitude: -93.036912, price: 30, category: 'NP')
-  load('import/watsons_wander.rb') && Import::WatsonsWander.import('23-04-2017')
-
+  MapPlace.create(map_id: 1, title: 'Petit Jean State Park', arrived: Date.parse('30-04-2017'), latitude: 35.125858, longitude: -92.914381, price: 20, category: 'SP')
+  load('import/watsons_wander.rb') && Import::WatsonsWander.import('30-04-2017')
 
   MapPlace.find_each { |m| m.save }; UpdateInfographic.perform
 
