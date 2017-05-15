@@ -6,6 +6,8 @@ class UpdateInfographic
     require 'open-uri'
     content = open(url).read
 
+    # content = File.read('/Users/tiwatson/Downloads/infographic.json')
+
     require 'aws-sdk-core'
     Aws.config = {
       :access_key_id => ENV['S3_KEY'],
