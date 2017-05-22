@@ -3,11 +3,20 @@ class WatsonsWander
 
 =begin
 
-  MapPlace.create(map_id: 1, title: 'Hawker Point Campground', arrived: Date.parse('12-05-2017'), latitude: 37.612550, longitude: -93.786414, price: 14, category: 'ARMY')
-  load('import/watsons_wander.rb') && Import::WatsonsWander.import('12-05-2017')
+38.774899, -95.187492
+39.018882, -96.818878
+39.268846, -103.708682
+39.753463, -105.232562
 
-  MapPlace.create(map_id: 1, title: 'Private Residence', arrived: Date.parse('14-05-2017'), latitude: 38.774899, longitude: -95.187492, price: 0, category: 'PR')
-  load('import/watsons_wander.rb') && Import::WatsonsWander.import('14-05-2017')
+  MapPlace.create(map_id: 1, title: 'Walmart', arrived: Date.parse('19-05-2017'), latitude: 39.018882, longitude: -96.818878, price: 0, category: 'PL')
+  load('import/watsons_wander.rb') && Import::WatsonsWander.import('19-05-2017')
+
+  MapPlace.create(map_id: 1, title: 'Arbys', arrived: Date.parse('20-05-2017'), latitude: 39.268846, longitude: -103.708682, price: 0, category: 'PL')
+  load('import/watsons_wander.rb') && Import::WatsonsWander.import('20-05-2017')
+
+  MapPlace.create(map_id: 1, title: 'Clear Creek RV Park', arrived: Date.parse('21-05-2017'), latitude: 39.753463, longitude: -105.232562, price: 40, category: 'CITY')
+  load('import/watsons_wander.rb') && Import::WatsonsWander.import('21-05-2017')
+
 
   MapPlace.find_each { |m| m.save }; UpdateInfographic.perform
 
