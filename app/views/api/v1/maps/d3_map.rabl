@@ -80,6 +80,21 @@ node(:tracks) do
         }
       }
     ]
+  },
+  {
+    track: [
+      {
+        type: 'Feature',
+        id: '01',
+        properties: {
+          name: 'Linestring'
+        },
+        geometry: {
+          type: 'LineString',
+          coordinates: @map.d3_tracks(5)
+        }
+      }
+    ]
   }
 
   ]
