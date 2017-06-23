@@ -3,11 +3,11 @@ class WatsonsWander
 
 =begin
 
-40.178833, -105.889770
 40.376924, -106.730487
+41.639805, -109.249374
 
-  MapPlace.create(map_id: 1, title: 'Forest Rd 296', arrived: Date.parse('11-06-2017'), latitude: 40.376924, longitude: -106.730487, price: 0, category: 'NFB')
-  load('import/watsons_wander.rb') && Import::WatsonsWander.import('11-06-2017')
+  MapPlace.create(map_id: 1, title: 'Sweetwater Event Complex', arrived: Date.parse('18-06-2017'), latitude: 41.639805, longitude: -109.249374, price: 25, category: 'CP')
+  load('import/watsons_wander.rb') && Import::WatsonsWander.import('18-06-2017')
 
   MapPlace.find_each { |m| m.save }; UpdateInfographic.perform
 
