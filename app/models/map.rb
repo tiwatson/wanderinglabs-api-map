@@ -9,4 +9,10 @@ class Map < ActiveRecord::Base
     end
   end
 
+  def info_tracks
+    Rails.cache.fetch("info_tracks", expires_in: 1.day) do
+      puts "info_tracks not cached"
+      DouglasPeucker::LineSimplifier.new(self.map_places.pluck(:arrival_path).flatten(1).collect { |i| [i[0].to_f, i[1].to_f]}).threshold(0.05).points
+    end
+  end
 end

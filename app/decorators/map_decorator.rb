@@ -56,7 +56,7 @@ class MapDecorator < Draper::Decorator
   end
 
   def path
-    DouglasPeucker::LineSimplifier.new(object.map_places.pluck(:arrival_path).flatten(1).collect { |i| [i[0].to_f, i[1].to_f]}).threshold(0.05).points
+    object.info_tracks
   end
 
   def path_points

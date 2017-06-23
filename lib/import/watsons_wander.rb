@@ -9,7 +9,10 @@ class WatsonsWander
   MapPlace.create(map_id: 1, title: 'Sweetwater Event Complex', arrived: Date.parse('18-06-2017'), latitude: 41.639805, longitude: -109.249374, price: 25, category: 'CP')
   load('import/watsons_wander.rb') && Import::WatsonsWander.import('18-06-2017')
 
-  MapPlace.find_each { |m| m.save }; UpdateInfographic.perform
+  MapPlace.find_each { |m| m.save };
+  0.upto(5).each { |x| puts "Year: #{x}"; Map.find(1).d3_tracks(x) }; nil
+  Map.find(1).info_tracks; nil
+  UpdateInfographic.perform
 
   curl https://wanderinglabs-api-map.herokuapp.com/api/v1/maps/1.json > track_points.json
   curl https://wanderinglabs-api-map.herokuapp.com/api/v1/maps/1/d3_current.json > current.json
