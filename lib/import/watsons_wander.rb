@@ -3,11 +3,16 @@ class WatsonsWander
 
 =begin
 
-43.254001, -111.054168
 43.759122, -110.985559
+43.461182, -113.556741
+43.721710, -114.326931
 
-  MapPlace.create(map_id: 1, title: 'Teton Canyon Rd', arrived: Date.parse('04-07-2017'), latitude: 43.759122, longitude: -110.985559, price: 0, category: 'NFB')
-  load('import/watsons_wander.rb') && Import::WatsonsWander.import('04-07-2017')
+  MapPlace.create(map_id: 1, title: 'Lava Flow Campground', arrived: Date.parse('22-07-2017'), latitude: 43.461182, longitude: -113.556741, price: 15, category: 'NP')
+  load('import/watsons_wander.rb') && Import::WatsonsWander.import('22-07-2017')
+
+MapPlace.create(map_id: 1, title: 'Boundry Campground', arrived: Date.parse('23-07-2017'), latitude: 43.721710, longitude: -114.326931, price: 10, category: 'NF')
+load('import/watsons_wander.rb') && Import::WatsonsWander.import('23-07-2017')
+
 
   MapPlace.find_each { |m| m.save };
   0.upto(5).each { |x| puts "Year: #{x}"; Map.find(1).d3_tracks(x) }; nil
