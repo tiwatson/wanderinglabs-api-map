@@ -3,16 +3,19 @@ class WatsonsWander
 
 =begin
 
-43.759122, -110.985559
-43.461182, -113.556741
 43.721710, -114.326931
+43.758688, -114.341566 - july 27
+44.261667, -115.031430 - stanley lake aug 5
+44.171608, -114.905774 - 25
 
-  MapPlace.create(map_id: 1, title: 'Lava Flow Campground', arrived: Date.parse('22-07-2017'), latitude: 43.461182, longitude: -113.556741, price: 15, category: 'NP')
-  load('import/watsons_wander.rb') && Import::WatsonsWander.import('22-07-2017')
+  MapPlace.create(map_id: 1, title: 'Lake Creek Road', arrived: Date.parse('27-07-2017'), latitude: 43.758688, longitude: -114.341566, price: 0, category: 'NFB')
+  load('import/watsons_wander.rb') && Import::WatsonsWander.import('27-07-2017')
 
-MapPlace.create(map_id: 1, title: 'Boundry Campground', arrived: Date.parse('23-07-2017'), latitude: 43.721710, longitude: -114.326931, price: 10, category: 'NF')
-load('import/watsons_wander.rb') && Import::WatsonsWander.import('23-07-2017')
+MapPlace.create(map_id: 1, title: 'Stanley Boondocking 1', arrived: Date.parse('05-08-2017'), latitude: 44.261667, longitude: -115.031430, price: 0, category: 'NFB')
+load('import/watsons_wander.rb') && Import::WatsonsWander.import('05-08-2017')
 
+MapPlace.create(map_id: 1, title: 'Stanley Boondocking 2', arrived: Date.parse('25-08-2017'), latitude: 44.171608, longitude: -114.905774, price: 0, category: 'NFB')
+load('import/watsons_wander.rb') && Import::WatsonsWander.import('25-08-2017')
 
   MapPlace.find_each { |m| m.save };
   0.upto(5).each { |x| puts "Year: #{x}"; Map.find(1).d3_tracks(x) }; nil
