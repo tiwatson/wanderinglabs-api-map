@@ -3,19 +3,23 @@ class WatsonsWander
 
 =begin
 
-43.721710, -114.326931
-43.758688, -114.341566 - july 27
-44.261667, -115.031430 - stanley lake aug 5
 44.171608, -114.905774 - 25
+43.658210, -116.276169
+42.560620, -113.791628
+40.638121, -111.626019
+40.618473, -111.423073
 
-  MapPlace.create(map_id: 1, title: 'Lake Creek Road', arrived: Date.parse('27-07-2017'), latitude: 43.758688, longitude: -114.341566, price: 0, category: 'NFB')
-  load('import/watsons_wander.rb') && Import::WatsonsWander.import('27-07-2017')
+  MapPlace.create(map_id: 1, title: 'Boise Riverside RV Park', arrived: Date.parse('02-09-2017'), latitude: 43.658210, longitude: -116.276169, price: 0, category: 'PP')
+  load('import/watsons_wander.rb') && Import::WatsonsWander.import('02-09-2017')
 
-MapPlace.create(map_id: 1, title: 'Stanley Boondocking 1', arrived: Date.parse('05-08-2017'), latitude: 44.261667, longitude: -115.031430, price: 0, category: 'NFB')
-load('import/watsons_wander.rb') && Import::WatsonsWander.import('05-08-2017')
+  MapPlace.create(map_id: 1, title: 'Burley Walmart', arrived: Date.parse('09-09-2017'), latitude: 42.560620, longitude: -113.791628, price: 0, category: 'PL')
+  load('import/watsons_wander.rb') && Import::WatsonsWander.import('09-09-2017')
 
-MapPlace.create(map_id: 1, title: 'Stanley Boondocking 2', arrived: Date.parse('25-08-2017'), latitude: 44.171608, longitude: -114.905774, price: 0, category: 'NFB')
-load('import/watsons_wander.rb') && Import::WatsonsWander.import('25-08-2017')
+  MapPlace.create(map_id: 1, title: 'Spruces Campground', arrived: Date.parse('10-09-2017'), latitude: 40.638121, longitude: -111.626019, price: 23, category: 'NF')
+  load('import/watsons_wander.rb') && Import::WatsonsWander.import('10-09-2017')
+
+  MapPlace.create(map_id: 1, title: 'Jordanelle State Park', arrived: Date.parse('17-09-2017'), latitude: 40.618473, longitude: -111.423073, price: 30, category: 'SP')
+  load('import/watsons_wander.rb') && Import::WatsonsWander.import('17-09-2017')
 
   MapPlace.find_each { |m| m.save };
   0.upto(5).each { |x| puts "Year: #{x}"; Map.find(1).d3_tracks(x) }; nil
