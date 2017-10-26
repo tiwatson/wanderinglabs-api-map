@@ -3,19 +3,25 @@ class WatsonsWander
 
 =begin
 
-40.618473, -111.423073
-39.111644, -110.733791
-38.645316, -110.647955
 38.297386, -111.388115
+37.858867, -111.316057
+37.723840, -111.528802
+37.668965, -112.162747
+37.208069, -112.688739
 
-  MapPlace.create(map_id: 1, title: 'Wedge Overlook Campsite #2', arrived: Date.parse('24-09-2017'), latitude: 39.111644, longitude: -110.733791, price: 0, category: 'BLMB')
-  load('import/watsons_wander.rb') && Import::WatsonsWander.import('24-09-2017')
+  MapPlace.create(map_id: 1, title: 'Burr Trail Rd', arrived: Date.parse('06-10-2017'), latitude: 37.858867, longitude: -111.316057, price: 0, category: 'BLMB')
+  load('import/watsons_wander.rb') && Import::WatsonsWander.import('06-10-2017')
 
-  MapPlace.create(map_id: 1, title: 'San Rafael Swell', arrived: Date.parse('29-09-2017'), latitude: 38.645316, longitude: -110.647955, price: 0, category: 'BLMB')
-  load('import/watsons_wander.rb') && Import::WatsonsWander.import('29-09-2017')
+MapPlace.create(map_id: 1, title: 'Hole in the Rock', arrived: Date.parse('07-10-2017'), latitude: 37.723840, longitude: -111.528802, price: 0, category: 'BLMB')
+load('import/watsons_wander.rb') && Import::WatsonsWander.import('07-10-2017')
 
-  MapPlace.create(map_id: 1, title: 'Beas Lewis Flat', arrived: Date.parse('01-10-2017'), latitude: 38.297386, longitude: -111.388115, price: 0, category: 'BLMB')
-  load('import/watsons_wander.rb') && Import::WatsonsWander.import('01-10-2017')
+MapPlace.create(map_id: 1, title: 'Rubys RV Park', arrived: Date.parse('15-10-2017'), latitude: 37.668965, longitude: -112.162747, price: 32, category: 'PP')
+load('import/watsons_wander.rb') && Import::WatsonsWander.import('15-10-2017')
+
+MapPlace.create(map_id: 1, title: 'Twin Hollow', arrived: Date.parse('22-10-2017'), latitude: 37.208069, longitude: -112.688739, price: 0, category: 'BLMB')
+load('import/watsons_wander.rb') && Import::WatsonsWander.import('22-10-2017')
+
+
 
   MapPlace.find_each { |m| m.save };
   0.upto(5).each { |x| puts "Year: #{x}"; Map.find(1).d3_tracks(x) }; nil
