@@ -9,8 +9,8 @@ class WatsonsWander
 37.668965, -112.162747
 37.208069, -112.688739
 
-  MapPlace.create(map_id: 1, title: 'Burr Trail Rd', arrived: Date.parse('06-10-2017'), latitude: 37.858867, longitude: -111.316057, price: 0, category: 'BLMB')
-  load('import/watsons_wander.rb') && Import::WatsonsWander.import('06-10-2017')
+MapPlace.create(map_id: 1, title: 'Burr Trail Rd', arrived: Date.parse('06-10-2017'), latitude: 37.858867, longitude: -111.316057, price: 0, category: 'BLMB')
+load('import/watsons_wander.rb') && Import::WatsonsWander.import('06-10-2017')
 
 MapPlace.create(map_id: 1, title: 'Hole in the Rock', arrived: Date.parse('07-10-2017'), latitude: 37.723840, longitude: -111.528802, price: 0, category: 'BLMB')
 load('import/watsons_wander.rb') && Import::WatsonsWander.import('07-10-2017')
