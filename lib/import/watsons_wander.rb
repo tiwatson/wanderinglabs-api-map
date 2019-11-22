@@ -85,7 +85,7 @@ load('import/watsons_wander.rb') && Import::WatsonsWander.import('22-10-2017')
 
       map_item.description = pp['description'] || ''
       map_item.title = pp['name']
-      map_item.price = pp['price'].gsub('$','')
+      map_item.price =     pp['price'].gsub('$','')
       map_item.city = pp['city']
       map_item.state = pp['state']
 
